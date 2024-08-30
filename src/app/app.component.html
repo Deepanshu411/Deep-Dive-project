@@ -1,5 +1,17 @@
 <app-header />
 
 <main>
-  <app-dashboard-components />
+  <div id="dashboard">
+    <app-dashboard-item [image]="{src: 'status.png', alt: 'A Signal Symbol'}" title="Server Status">
+      <app-server-status />
+    </app-dashboard-item>
+
+    <app-dashboard-item [image]="{src: 'globe.png', alt: 'A Globe'}" title="Traffic">
+      <app-traffic-component />
+    </app-dashboard-item>
+    
+    <app-dashboard-item [image]="{src: 'list.png', alt: 'A List of Items'}" title="Support Tickets">
+      <app-support-tickets />
+    </app-dashboard-item>
+  </div>
 </main>
